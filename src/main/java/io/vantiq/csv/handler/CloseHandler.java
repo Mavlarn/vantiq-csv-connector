@@ -1,14 +1,14 @@
 package io.vantiq.csv.handler;
 
 import io.vantiq.csv.CSVConnector;
-import io.vantiq.extjsdk.ConnectorConfig;
+import io.vantiq.csv.ConnectorConfig;
 import io.vantiq.extjsdk.ExtensionWebSocketClient;
 import io.vantiq.extjsdk.Handler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static io.vantiq.extjsdk.ConnectorConstants.CONNECTOR_CONNECT_TIMEOUT;
-import static io.vantiq.extjsdk.ConnectorConstants.RECONNECT_INTERVAL;
+import static io.vantiq.csv.ConnectorConstants.CONNECTOR_CONNECT_TIMEOUT;
+import static io.vantiq.csv.ConnectorConstants.RECONNECT_INTERVAL;
 
 public class CloseHandler extends Handler<ExtensionWebSocketClient> {
 

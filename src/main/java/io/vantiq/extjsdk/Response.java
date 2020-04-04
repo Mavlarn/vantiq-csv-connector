@@ -7,7 +7,7 @@
  * SPDX: MIT
  */
 
-package extjsdk;
+package io.vantiq.extjsdk;
 
 import java.util.HashMap;
 import java.util.Map;

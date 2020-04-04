@@ -1,7 +1,7 @@
 package io.vantiq.csv.handler;
 
 import io.vantiq.csv.CSVConnector;
-import io.vantiq.extjsdk.ConnectorConstants;
+import io.vantiq.csv.ConnectorConstants;
 import io.vantiq.extjsdk.ExtensionServiceMessage;
 import io.vantiq.extjsdk.ExtensionWebSocketClient;
 import io.vantiq.extjsdk.Handler;

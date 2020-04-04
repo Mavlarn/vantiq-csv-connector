@@ -1,7 +1,6 @@
 package io.vantiq.csv;
 
 import io.vantiq.csv.handler.*;
-import io.vantiq.extjsdk.ConnectorConfig;
 import io.vantiq.extjsdk.ExtensionWebSocketClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +8,8 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import static io.vantiq.extjsdk.ConnectorConstants.CONNECTOR_CONNECT_TIMEOUT;
-import static io.vantiq.extjsdk.ConnectorConstants.RECONNECT_INTERVAL;
+import static io.vantiq.csv.ConnectorConstants.CONNECTOR_CONNECT_TIMEOUT;
+import static io.vantiq.csv.ConnectorConstants.RECONNECT_INTERVAL;
 
 
 public class CSVConnector {

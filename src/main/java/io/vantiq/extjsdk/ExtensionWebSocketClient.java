@@ -7,7 +7,7 @@
  * SPDX: MIT
  */
 
-package extjsdk;
+package io.vantiq.extjsdk;
 
 // Author: Alex Blumer
 // Email: alex.j.blumer@gmail.com

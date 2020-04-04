@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
 
-import static io.vantiq.extjsdk.ConnectorConstants.*;
+import static io.vantiq.csv.ConnectorConstants.*;
 
 
 public class ConnectorConfig {

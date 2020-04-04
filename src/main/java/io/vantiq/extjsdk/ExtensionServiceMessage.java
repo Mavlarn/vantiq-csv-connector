@@ -7,7 +7,7 @@
  * SPDX: MIT
  */
 
-package extjsdk;
+package io.vantiq.extjsdk;
 
 import okhttp3.MediaType;
 
