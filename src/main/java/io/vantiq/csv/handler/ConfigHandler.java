@@ -64,7 +64,6 @@ public class ConfigHandler extends Handler<ExtensionServiceMessage> {
                 if (row.length == 0) {
                     continue;
                 }
-                // need to wrap as List, which can be identified as JSON list in VANTIQ.
 
                 Map data = new HashMap();
                 List lineData = new ArrayList(3);
@@ -76,12 +75,13 @@ public class ConfigHandler extends Handler<ExtensionServiceMessage> {
                 count++;
                 if (count % csvConfig.getLogFreq() == 0) {
                     long theTime = System.currentTimeMillis();
-                    LOG.debug("line:{}\t{}", theTime, row);
+                    LOG.debug("line:{}\t{}", theTime, data);
                     if (csvConfig.getSleepInterval() > 0) {
 //                        Thread.sleep(csvConfig.getSleepInterval());
                     }
                 }
             }
+            LOG.info("line processed:{}", count);
 
         } catch (Exception e) {
             LOG.error(e.getMessage(), e);
